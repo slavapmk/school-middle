@@ -1,5 +1,5 @@
-#ifndef EASY_H_INCLUDED
-#define EASY_H_INCLUDED
+#ifndef MIDDLE_H_INCLUDED
+#define MIDDLE_H_INCLUDED
 
 int max(int a, int b);
 
