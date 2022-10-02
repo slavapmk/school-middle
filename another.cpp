@@ -2,6 +2,7 @@
 
 int itc_max_num(long long number) {
     int maxInt = -1;
+    if (number < 0) number *= -1;
     while (number > 0) {
         maxInt = max(int(number % (long long) 10), maxInt);
         number = number / 10;
@@ -11,6 +12,7 @@ int itc_max_num(long long number) {
 
 int itc_min_num(long long number) {
     int maxInt = 10;
+    if (number < 0) number *= -1;
     while (number > 0) {
         maxInt = min(int(number % (long long) 10), maxInt);
         number = number / 10;
@@ -20,6 +22,7 @@ int itc_min_num(long long number) {
 
 int itc_null_count(long long number) {
     int i = 0;
+    if (number < 0) number *= -1;
     while (number > 0) {
         int ch = int(number % (long long) 10);
         number = number / 10;

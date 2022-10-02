@@ -17,7 +17,7 @@ int itc_max_num(long long number);
 
 int itc_min_num(long long number);
 
-int itc_rev_num(long long number);
+long long itc_rev_num(long long number);
 
 int itc_null_count(long long number);
 
