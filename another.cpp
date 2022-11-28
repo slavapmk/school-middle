@@ -35,12 +35,12 @@ int itc_null_count(long long number) {
 }
 
 bool itc_mirror_num(long long number) {
-    return itc_rev_num(number) == number;
+    return itc_reverse(number) == number;
 }
 
 int itc_mirror_count(long long number) {
     int result = 0;
-    for (int i = 0; i < number; ++i)
+    for (int i = 1; i <= number; i++)
         if (itc_mirror_num(i))
             result++;
     return result;

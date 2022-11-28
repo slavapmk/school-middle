@@ -37,11 +37,5 @@ long long itc_multi_num(long long number) {
 }
 
 long long itc_rev_num(long long number) {
-    long long result = 0;
-    long long input = number < 0 ? number * -1 : number;
-    while (input > 0) {
-        result = result * 10 + (int) (input % (long long) 10);
-        input = input / 10;
-    }
-    return result;
+    return itc_len_num(itc_reverse(number));
 }

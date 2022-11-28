@@ -41,4 +41,6 @@ int itc_covert_num(long long number, int ss);
 
 int itc_rev_covert_num(long long number, int ss);
 
+long long int itc_reverse(long long int number);
+
 #endif
