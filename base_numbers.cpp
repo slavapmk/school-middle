@@ -3,16 +3,16 @@
 #include <iostream>
 
 int itc_len_num(long long number) {
-    int i = 0;
-    if (number < 0) {
-        i++;
+    long long result = 0;
+    if (number < 0)
         number *= -1;
-    }
+    if (number == 0)
+        return 1;
     while (number > 0) {
-        number = number / 10;
-        i++;
+        result++;
+        number /= 10;
     }
-    return i;
+    return (int) result;
 }
 
 int itc_sum_num(long long number) {
@@ -27,6 +27,7 @@ int itc_sum_num(long long number) {
 
 long long itc_multi_num(long long number) {
     long long i = 1;
+    if (number == 0) return 0;
     if (number < 0) number *= -1;
     while (number > 0) {
         i *= number % 10;

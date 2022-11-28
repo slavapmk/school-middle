@@ -1,6 +1,7 @@
 #include "middle.h"
 
 int itc_max_num(long long number) {
+    if (number == 0) return 0;
     int maxInt = -1;
     if (number < 0) number *= -1;
     while (number > 0) {
@@ -11,6 +12,7 @@ int itc_max_num(long long number) {
 }
 
 int itc_min_num(long long number) {
+    if (number == 0) return 0;
     int maxInt = 10;
     if (number < 0) number *= -1;
     while (number > 0) {
@@ -21,6 +23,7 @@ int itc_min_num(long long number) {
 }
 
 int itc_null_count(long long number) {
+    if (number == 0) return 1;
     int i = 0;
     if (number < 0) number *= -1;
     while (number > 0) {
