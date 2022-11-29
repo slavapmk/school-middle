@@ -2,7 +2,7 @@
 
 long long itc_bin_num(long long number) {
     long long result = 0;
-    int index = 1;
+    long long index = 1;
     while (number > 0) {
         result += index * (number % 2);
         index *= 10;
@@ -13,7 +13,7 @@ long long itc_bin_num(long long number) {
 
 long long itc_oct_num(long long number) {
     long long result = 0;
-    int index = 1;
+    long long index = 1;
     while (number > 0) {
         result += index * (number % 8);
         index *= 10;
